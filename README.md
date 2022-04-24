@@ -1,29 +1,29 @@
 # Voting_dapp
-Installation
+# Installation
 First you need to clone the project
 
 git clone git@github.com:Pireyohan/Voting_dapp.git
 
+# Dependencies in order to install all dependencies (ganache, truffle ...), please do like the following
 
-Dependencies
-In order to install all dependencies (ganache, truffle ...), please do like the following
-
-npm install
-
-// To install truffle globaly
-npm install -g truffle
-
-// To install ganache globaly
-npm install -g ganache-cli
-Tests
-
+ 1) => npm install => truffle unbox react
+ 2) To install truffle globaly => npm install -g truffle
+ 3) To install ganache globaly => npm install -g ganache-cli
+ 4) to install => npm i --save-dev chai truffle@5.4.29 solidity-coverage eth-gas-reporter @openzeppelin/contracts @openzeppelin/test-helpers
+ 5) Configure truffle-config.js
+ 6) npm install --prefix . @truffle/hdwallet-provider
+ 7) npm install --prefix . --save dotenv
+ 8) to the terminal => ganache-cli -m 'MNEMONIC'
+ 9) To an other terminal => truffle migrate or truffle migrate --network ropsten for a testnest
+ 10) To an other terminal => npm run start
+ 
 To run the project tests suite, do the following
 
 // Run ganache localy
 ganache-cli -h 127.0.0.1
 
 // Run migrations
-truffle migrate
+truffle migrate  or truffle migrate -reset
 
 // Launch test suite   => truffle test
 > server:            http://127.0.0.1:8555
